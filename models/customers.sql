@@ -5,4 +5,4 @@ select
 	REGION,
 	CREATED_AT,
 	UPDATED_AT
-from DBT_CLASS2.DBT_CLASS2.RAW_CUSTOMER
+from {{ source('raw_cust', 'RAW_CUSTOMER') }}
