@@ -1,5 +1,5 @@
 WITH source AS (
-    SELECT * FROM {{ source('raw_cust', 'RAW_CUSTOMER') }}
+    SELECT * FROM {{ source('raw_cust', 'RAW_CUSTOMERS') }}
 )
 select 
     ID AS CUSTOMER_ID,

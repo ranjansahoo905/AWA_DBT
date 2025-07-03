@@ -4,4 +4,4 @@
     )
 }}
 
-select * from {{ source('raw_cust', 'RAW_CUSTOMER') }}
+select * from {{ source('raw_cust', 'RAW_CUSTOMERS') }}

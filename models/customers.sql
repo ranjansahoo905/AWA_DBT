@@ -5,4 +5,4 @@ select
 	REGION,
 	CREATED_AT,
 	UPDATED_AT
-from {{ source('raw_cust', 'RAW_CUSTOMER') }}
+from {{ source('raw_cust', 'RAW_CUSTOMERS') }}

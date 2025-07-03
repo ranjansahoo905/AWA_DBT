@@ -2,11 +2,11 @@ version: 2
 
 sources:
   - name: raw_cust # this is the source_name
-    database: DBT_CLASS2
-    schema: DBT_CLASS2
+    database: DBT_CLASS_NEW
+    schema: DBT_CLASS_SCHEMS
 
     tables:
-      - name: RAW_CUSTOMER # this is the table_name
+      - name: RAW_CUSTOMERS # this is the table_name
       - name: RAW_ORDERS
       - name: RAW_PAYMENTS
       - name: RAW_PRODUCTS
