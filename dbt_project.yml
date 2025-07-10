@@ -40,3 +40,12 @@ models:
     # Applies to all files under models/example/
     customers:
       +materialized: table
+    staging:
+      +schema: stg
+      +materialized: table
+    intermediate:
+      +schema: int
+      +materialized: table
+    mart:
+      +schema: mart
+      +materialized: table

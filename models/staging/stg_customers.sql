@@ -4,8 +4,6 @@ WITH source AS (
 select 
     ID AS CUSTOMER_ID,
 	NAME,
-	EMAIL,
-	REGION,
-	CREATED_AT,
-	UPDATED_AT
+	upper(EMAIL) as EMAIL_UPPER,
+	CREATED_AT
 from source
