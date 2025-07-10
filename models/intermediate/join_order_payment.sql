@@ -6,10 +6,7 @@ with orders
     )
 select 
     o.ORDER_ID,
-    o.customer_id,
     o.status,
-    o.order_date,
-    o.total_amount,
     p.amount as payment_amount,
     p.payment_method,
     p.payment_date    
