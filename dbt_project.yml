@@ -35,6 +35,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
+seeds:
+  my_new_project:
+    country:
+    state:
+      +delimiter: "|"
+      +schema: stg
+    zip_code:
+      +column_types:
+        zip_code: varchar
+        country_name: varchar
+        
+
+      
+
 models:
   my_new_project:
     # Applies to all files under models/example/
@@ -49,3 +63,4 @@ models:
     mart:
       +schema: mart
       +materialized: table
+
