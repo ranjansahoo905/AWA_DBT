@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_products
+    description: "stg model price should not be null"
+    columns:
+      - name: price
+        description: "Price should not be empty"
+        tests:
+          - not_null
