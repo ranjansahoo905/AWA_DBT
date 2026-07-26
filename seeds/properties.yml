@@ -1,0 +1,13 @@
+seeds:
+  - name: seeds_demo
+    description: "This is my seeds file for sales"
+    config:
+      column_types:
+        name: varchar
+        sales: integer
+  - name: seeds_demo_2
+    description: "This is my 2nd seeds file for sales"
+    config:
+      column_types:
+        name: varchar
+        sales: integer
