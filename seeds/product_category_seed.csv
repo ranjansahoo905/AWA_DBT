@@ -1,0 +1,6 @@
+product_id,category,category_manager,tax_rate
+101,Electronics,Alice,18
+102,Electronics,Alice,18
+103,Furniture,Bob,12
+104,Clothing,Carol,5
+105,Groceries,David,0

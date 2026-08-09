@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Staging model for raw order data from the store's checkout system"
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order"
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "Foreign key to the customer placing the order"
+
+      - name: customer_name
+        description: "Name of the customer placing the order"
+        tests:
+          - not_null
+
+      - name: order_date
+        description: "Date the order was placed"
+
+      - name: amount
+        description: "Total order amount in local currency"
+        tests:
+          - no_extreme_values:
+              arguments:
+                max_value: 1000
+
+      - name: status
+        description: "Current status of the order"
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['completed', 'pending', 'refunded']

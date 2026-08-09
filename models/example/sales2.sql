@@ -1,0 +1,1 @@
+select * from AWA_DBT.DBT_SH.SALES2

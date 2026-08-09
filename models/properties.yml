@@ -7,4 +7,14 @@ sources:
     tables:
       - name: "CUSTOMER"
       - name: "ORDERS"
+
+  - name: "src"
+    database: "AWA_DBT"
+    schema: "DBT_SH"
+    tables:
+      - name: "ORDERS"
+      - name: "SALES3"
+      - name: "raw_orders"
+        description: "Raw order data as it lands from the store's checkout system"
+      
       

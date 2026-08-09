@@ -11,3 +11,36 @@ seeds:
       column_types:
         name: varchar
         sales: integer
+  - name: product_category_seed
+    description: "Product category lookup table"
+    config: 
+      column_types:
+        product_id: integer
+        category: varchar
+        category_manager: varchar
+        tax_rate: integer
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+  - name: currency_rates
+    description: "Currency conversion lookup"
+    config: 
+      column_types:
+        currency_code: varchar
+        currency_name: varchar
+        exchange_rate_used: decimal(10,4)
+    columns:
+      - name: currency_code
+        tests:
+          - not_null
+          - unique
+          
+        
+
+      
+      
+      
+      
+        

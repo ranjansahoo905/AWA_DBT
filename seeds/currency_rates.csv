@@ -1,0 +1,7 @@
+currency_code,currency_name,exchange_rate_to_usd
+USD,US Dollar,1.0000
+EUR,Euro,1.0900
+INR,Indian Rupee,0.0120
+GBP,British Pound,1.3400
+JPY,Japanese Yen,0.0068
+AUD,Australian Dollar,0.6600
